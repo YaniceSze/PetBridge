@@ -10,7 +10,6 @@ export default function App() {
       <Text>Hello PetBridge </Text>
       <Image 
         blurRadius={10}
-        fadeDuration={10000}
         source={{
         width: 200,
         height: 300,
