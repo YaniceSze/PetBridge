@@ -38,12 +38,14 @@ const SignIn = () => {
           value={form.email}
           handleChangeText={(e)=>setForm({...form, email: e})} // 1st parameter: destruct the existing form value, 2nd parameter: modify email to equal to event
           keyboardType="email-address" // useful for autofilling info such as email, names and so on
+          placeholder="Email"
         />
 
         <FormField
           title="Password"
           value={form.password}
           handleChangeText={(e)=>setForm({...form, password: e})} 
+          placeholder="Password"
         /> 
 
         <CustomButton
