@@ -27,10 +27,9 @@ const FormField = ({title, value, placeholder, handleChangeText, ...props}) => {
         {/* EyeHide */}
         {title === 'Password' && (
           <TouchableOpacity
-            style={styles.eyeButton}
             onPress={() => setShowPassword(!showPassword)} // Toggle showPassword
           >
-            <Text style={styles.eyeText}>{showPassword ? '🙈' : '👁️'}</Text>
+            <Text>{!showPassword ? '🙈' : '👁️'}</Text>
           </TouchableOpacity>
         )}
          

@@ -20,6 +20,7 @@ const SignIn = () => {
       Alert.alert('Error', 'Please fill in all fields');
     } else {
       Alert.alert('Success', `Logged in as: ${form.email}`);
+      setIsSubmitting(true);
     }
   }
 
